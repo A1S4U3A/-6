@@ -1,0 +1,18 @@
+﻿<Window x:Class="ПР6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сортировка массивов" Height="400" Width="600">
+    <Grid>
+        <StackPanel Margin="10">
+            <Button Name="GenerateButton" Content="Сгенерировать массив" Click="GenerateButton_Click" />
+            <ComboBox Name="SortAlgorithmComboBox" Margin="0,10,0,0">
+                <ComboBoxItem Content="Сортировка пузырьком" />
+                <ComboBoxItem Content="Сортировка вставками" />
+                <ComboBoxItem Content="Сортировка выбором" />
+                <ComboBoxItem Content="Быстрая сортировка" />
+            </ComboBox>
+            <Button Name="SortButton" Content="Сортировать" Click="SortButton_Click" Margin="0,10,0,0"/>
+            <TextBlock Name="ResultTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
